@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <p>Координаты точки:</p>
+    <p>Ax:<input type="text" name="Ax" id="s1"><Br>
+    <p>Ay:<input type="text" name="Ay" id="s2"><Br>
+    <p>Растояние до начала координат:<input type="text" id="result"><Br>
+
+    <script>
+
+        window.onselect = pohui;
+
+        function pohui () {
+            const Ax=document.getElementById('s1').value;
+            const Ay=document.getElementById('s2').value;
+            const res=Math.abs(Math.sqrt(Math.pow(Ax,2)+Math.pow(Ay,2)))
+            document.getElementById("result").value = res;
+        }
+    </script>
+    <button><a href="zad3.html">Следующая</a></button>
+</body>
+</html>

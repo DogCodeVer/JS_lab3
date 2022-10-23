@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<script>
+    function f(A,b) {
+        document.getElementById('s2').value=A;
+        document.getElementById("s1").value=b;
+    }
+</script>
+    <p>Обмен переменных</p>
+    <p>A:<input type="text" name="A" id="s1"><Br>
+    <p>B:<input type="text" name="B" id="s2" onblur="f(document.getElementById('s1').value,document.getElementById('s2').value)"><Br>
+
+</body>
+</html>

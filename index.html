@@ -1,0 +1,37 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+<script>
+    function S(Ax, Ay, Bx, By, Cx, Cy) {
+        const pres = 0.5 * (Math.abs(Bx - Ax) * (Cy - Cx) - (Cx - Ax) * (By - Ay));
+        document.getElementById("result").value += pres;
+    }
+
+</script>
+<p><b>Координаты трех точек:</b></p>
+ <form name="form">
+  <p>Ax:<input type="text" name="Ax" id="s1"><Br>
+  <p>Ay:<input type="text" name="Ay" id="s2"><Br>
+  <p>Bx:<input type="text" name="Bx" id="s3"><Br>
+  <p>By:<input type="text" name="By" id="s4"><Br>
+  <p>Cx:<input type="text" name="Cx" id="s5"><Br>
+  <p>Cy:<input type="text" name="Cy" id="s6"><Br>
+ </form>
+<div name="ask">
+  Ответ:<input type="text" id="result" onfocus="S(document.getElementById('s1').value,document.getElementById('s2').value,document.getElementById('s3').value,document.getElementById('s4').value,document.getElementById('s5').value,document.getElementById('s6').value)">
+</div>
+    <button><a href="zad2.html">Следующая</a></button>
+<script>
+
+</script>
+</body>
+
+</html>
